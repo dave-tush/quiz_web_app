@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Admin Panel - Pastor's Trivia Quiz</title>
+  <link rel="stylesheet" href="admin.css">
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script defer src="admin.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🎮 Quiz Admin Panel</h1>
+    
+    <div class="admin-controls">
+      <button id="start-game-btn">Start Game</button>
+      <div id="game-status">Game Status: Waiting to start...</div>
+    </div>
+
+    <h2>Current Players</h2>
+    <div id="current-players">
+      <!-- Players will appear here -->
+    </div>
+
+    <h2>Live Scores</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody id="live-scores-body">
+        <!-- Populated by JavaScript -->
+      </tbody>
+    </table>
+
+    <h2>Top Scores (All Time)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody id="leaderboard-body">
+        <!-- Populated by JavaScript -->
+      </tbody>
+    </table>
+    <!-- Add this to admin.html -->
+<div id="game-review" style="display: none; margin-top: 2rem;">
+    <h2>Game Review</h2>
+    <div id="questions-list">
+      <!-- Questions and answers will appear here -->
+    </div>
+    <button id="hide-review" style="margin-top: 1rem;">Hide Review</button>
+  </div>
+  </div>
+</body>
+</html>
