@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 1rem;
+    min-height: 100vh;
+  }
+  
+  .container {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    margin: 1rem auto;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    margin-top: 0;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  input, button {
+    padding: 0.75rem;
+    margin: 0.75rem 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .option {
+    display: block;
+    margin: 0.75rem 0;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+  }
+  
+  .option:hover {
+    background-color: #e7f3ff;
+  }
+  
+  #timer {
+    font-weight: bold;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+  }
+  
+  #question-text {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+  }
+  
+  #current-score {
+    font-weight: bold;
+    color: #007BFF;
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 1rem;
+    }
+    
+    h1 {
+      font-size: 1.5rem;
+    }
+    
+    input, button, .option {
+      padding: 0.6rem;
+    }
+    
+    #question-text {
+      font-size: 1.1rem;
+    }
+  }
+  /* Add to style.css */
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    margin: 20px auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  #waiting-screen {
+    text-align: center;
+  }
